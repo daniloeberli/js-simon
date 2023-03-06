@@ -54,6 +54,7 @@ function logica(){
 
         while(isNaN(inputUser) || inputUser < min || inputUser > max){
             inputUser = Number(prompt("Errore di inserimento, riprova con un valore accettabile"));
+            return
         }
 
         if(!inputUserList.includes(inputUser)){
